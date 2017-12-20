@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="D:\Software Learning\Web Development Classes\Shreya web development\Bootstrap\library\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+
+<script src="D:\Software Learning\Web Development Classes\Shreya web development\Bootstrap\library\jquery\jquery-3.2.1.min.js"></script>
+
+<script src="D:\Software Learning\Web Development Classes\Shreya web development\Bootstrap\library\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<a href="Home.html" >
+	<button class="btn btn-warning">
+		 Home 
+	</button>
+</a> 
+
+<div class="container jumbotron text-center">
+	<h2>Tooltip</h2>
+	<p>The data placement attribute specifies the tooltip position.</p>
+
+	<ul class="list-inline">
+		<li> <a href="#" data-toggle="tooltip" data-placement="top"
+		 title="I'm a tooltip whose data-placement is top."> Top </a> </li>
+		 <li> <a href="#" data-toggle="tooltip" data-placement="bottom"
+		 title="I'm a tooltip whose data-placement is bottom."> Bottom </a> </li>
+		 <li> <a href="#" data-toggle="tooltip" data-placement="left"
+		 title="I'm a tooltip whose data-placement is left."> Left </a> </li>
+		 <li> <a href="#" data-toggle="tooltip" data-placement="right"
+		 title="I'm a tooltip whose data-placement is right."> Right </a> </li>
+	</ul>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
+</body>
+</html>
